@@ -1,0 +1,8 @@
+.bi-cart {
+    width: 2rem;
+    color: white;
+    margin-right: 1rem;
+}
+.cart :hover {
+    color: rgb(231, 64, 64);
+}

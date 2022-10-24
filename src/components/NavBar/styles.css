@@ -1,0 +1,16 @@
+.nav_contenedor {
+    justify-content: space-between;
+}
+.nav_ul {
+    margin-left: 2rem;
+}
+.nav-item {
+    margin-left: 2rem;
+}
+.nav_link {
+    color: white;
+    text-decoration: none;
+}
+.nav_link:hover {
+    color: rgb(231, 64, 64)
+}

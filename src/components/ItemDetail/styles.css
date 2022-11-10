@@ -1,0 +1,12 @@
+.card-producto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.detail-imagen {
+    width: 300px;
+}
+.text-producto {
+    margin-left: 2rem;
+}

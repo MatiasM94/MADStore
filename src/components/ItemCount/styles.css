@@ -1,0 +1,11 @@
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+.valores {
+    text-align: center;
+    width: 5rem;
+    margin: 0;
+}

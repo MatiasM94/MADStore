@@ -38,8 +38,7 @@ export const SaveOrder = async (user, address, email, phone, products, total) =>
             })
 
             const docRef = await addDoc(collection(db, "orders"), generatorOrder);
-            ToastifySucces(`Se genero la orden ${docRef.id} correctamente.`)
-            // alert(`Se genero la orden ${docRef.id} correctamente.`)
+            alert(`Se genero la orden ${docRef.id} correctamente.`)
         }
     }
     catch (error) {

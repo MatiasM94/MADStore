@@ -14,8 +14,13 @@ const Item = ({producto}) => {
             <img className="imagenes" src={producto.thumbnail} alt="img"></img>
             <p>{producto.title}</p>
             <p>${producto.price}</p>
-            <p>en {producto.installments.quantity} cuotas de ${producto.installments.amount}</p>
             <button className="btn btn-primary"> Ver Detalle</button>
+            <div className="disponibilidad">
+                {producto.quantity > 0 ?
+                <p className="disponible">En stock</p>
+                :
+                <p className="disponible no-disponible">Sin stock</p>}
+            </div>
         </div>
     )
 }

@@ -1,16 +1,36 @@
+.navbar {
+    height: 10vh;
+}
 .nav_contenedor {
     justify-content: space-between;
 }
-.nav_ul {
-    margin-left: 2rem;
-}
 .nav-item {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .nav_link {
     color: white;
     text-decoration: none;
 }
 .nav_link:hover {
-    color: rgb(231, 64, 64)
+    color: rgb(231, 64, 64);
+    
+}
+.btn-link {
+    border: none;
+    color: white;
+    background-color: #212529;
+    margin-right: 1rem;
+}
+.btn-link:hover{
+    color: rgb(231, 64, 64);
+    --bs-btn-hover-color: rgb(231, 64, 64);
+}
+.sesion {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 7rem;
+    overflow: hidden;
 }

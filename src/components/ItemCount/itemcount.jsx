@@ -1,18 +1,18 @@
 import React from "react";
 import { useState } from "react";
+import { ToastError } from "../Toastify/toastify";
 import "./styles.css";
-// codigo de la primera activad del workbook
-const ItemCount = ({ inicial, stock, onAdd }) => {
+
+const ItemCount = ({ inicial, stock, onAdd, buttonText = "Agregar al carrito" }) => {
 
     const [valorActual, setInicial] = useState(inicial);
-    const [stockActual, setStock] = useState(stock);
 
     const restarCantidad = () => {
-        valorActual > 1 ? setInicial(valorActual - 1) : console.log("error");
+        valorActual > 1 ? setInicial(valorActual - 1) : ToastError("No puedes quitar más productos");
     }
 
     const sumarCantidad = () => {
-        valorActual < stockActual ? setInicial(valorActual + 1) : console.log("stock maximo");
+        valorActual < stock ? setInicial(valorActual + 1) : ToastError("No puedes agregar más productos");
     }
 
     return (
@@ -23,8 +23,8 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
                 <button className="btn btn-primary" onClick={sumarCantidad}>+</button>
             </div>
             <div className="botones">
-                <button className="btn btn-primary boton" onClick={() => onAdd(valorActual, stockActual, setInicial, setStock)}>Agregar al carrito</button>
-                <p className="valores">stock: {stockActual}</p>
+                <button disabled={stock === 0 ? true : false} className="btn btn-primary boton" onClick={() => onAdd(valorActual)}>{buttonText}</button>
+                <p className="stock valores">stock disponible: {stock}</p>
             </div>
         </>
 

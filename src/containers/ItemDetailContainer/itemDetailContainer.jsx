@@ -3,31 +3,37 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../../components/ItemDetail/itemDetail";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../firebase/config";
+import Loader from "../../components/Loader/loader";
+import { ToastError } from "../../components/Toastify/toastify";
+
 
 const ItemDetailContainer = () => {
 
     const {id} = useParams()
-
-    let [productDetail, setDetails] = useState(null)
+    const [productDetail, setDetails] = useState(null);
 
     useEffect(() => {
         ( async () => {
             try {
-                let response;
-
-                if (id) response = await fetch(`https://api.mercadolibre.com/items?ids=${id}`);
-
-                const data = await response.json();
-
-                if (data[0]) setDetails(data[0].body);
-
+                const docRef = doc(db, "products", id);
+                const docSnap = await getDoc(docRef);
+                
+                if (docSnap.exists()) {
+                    setDetails({...docSnap.data(), id: docSnap.id})
+                }
             } catch (error) {
-                console.log(error)
+                ToastError("Ocurrio un error, intentalo de nuevo")
             }
         })()
     }, [id])
 
-    return (productDetail ? <ItemDetail productDetail={productDetail}/> : <p>No hay coincidencia</p>);
+    return (
+        <>
+            {productDetail ? <ItemDetail productDetail={productDetail}/> : <Loader />}
+        </>
+        );
 };
 
 export default ItemDetailContainer;

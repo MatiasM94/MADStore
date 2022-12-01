@@ -1,6 +1,8 @@
 .card-detail {
+    position: relative;
     width: 300px;
     border: 1px solid rgba(128, 128, 128, 0.164);
+    overflow: hidden;
     border-radius: 6px;
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -16,4 +18,18 @@
 }
 .imagenes {
     margin: 1rem 0;
+}
+.disponibilidad {
+    position: absolute;
+    width: 6.5rem;
+    transform: rotate(-45deg);
+    top: 16px;
+    left: -16px;
+}
+.disponible {
+    background-color: rgb(59, 190, 59);
+}
+.no-disponible {
+    background-color: rgb(202 84 84);
+    color: white;
 }

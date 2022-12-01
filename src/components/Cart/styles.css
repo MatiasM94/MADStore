@@ -1,0 +1,29 @@
+.cart-detail {
+    display: flex;
+    width: 800px;
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px auto 0;
+}
+.contenedor-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+.cart-imagen {
+    width: fit-content;
+}
+.cart-text {
+    text-align: center;
+    padding: 1rem;
+    border: 1px 0 solid rgba(128, 128, 128, 0.267);
+}
+.contenedor-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.boton-eliminar {
+    margin: 0 1rem 1rem 0;
+}

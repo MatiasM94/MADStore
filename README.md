@@ -1,6 +1,6 @@
 # MAD Car Detailing Store
 Este proyecto es un **ecommerce** realizado como proyecto final del curso React Js dictado por **CoderHouse**.
-Esta hosteado en vercel y podes ingresar desde el siguiente link [MAD Store](https://madstore.vercel.app/)
+Esta hosteado en vercel y podes ingresar desde el siguiente link [MAD Store](https://mad-product-store.vercel.app/)
 ## Librerias utilizadas
 1. **Bootstrap**: Para conseguir un diseño rapido y sencillo.
 2. **Formik + Yup**: Para la creación, validación y control de datos de los formularios de registro/loguin de usuarios y ordenes de compra.

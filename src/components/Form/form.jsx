@@ -7,6 +7,11 @@ import * as Yup from "yup";
 import { SaveOrder } from "../../services/saveOrder";
 import "./styles.css";
 
+/**
+ * @property {Object} usuario recibe el usuario en formato de objeto para autocompletar campos del form
+ * @returns Devuelve el formulario que recibe datos de usuario para la creacion de la orden de compra
+ */
+
 const Form = () => {
 
     const { productos, setEstado, clearCart, calculateTotal } = useContext(Shop);
@@ -62,7 +67,7 @@ const Form = () => {
     return (
         <div className="contenedor">
             <div className="modalForm">
-                <h2>Confirme sus datos para realizar la compra</h2>
+                <h2 className="title-form">Confirme sus datos para realizar la compra</h2>
                 <form onSubmit={compraFormik.handleSubmit}>
                     <label>Nombres</label>
                     <input

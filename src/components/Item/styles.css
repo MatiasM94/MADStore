@@ -33,3 +33,9 @@
     background-color: rgb(202 84 84);
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .card-detail {
+        width: 350px;
+    }
+}

@@ -34,3 +34,19 @@ form {
 .form-title {
     margin-bottom: 1rem;
 }
+.boton-sesion {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 360px;
+    }
+    .inputs-form{
+        min-width: fit-content;
+    }
+    .form-title {
+        margin: 0 10px 1rem ;
+        text-align: left;
+    }
+}

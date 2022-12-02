@@ -6,6 +6,10 @@ import * as Yup from "yup";
 import "./styles.css"
 import { Shop } from "../../contexts/Shop";
 
+/**
+ * @returns Devuelve las vistas al form de inicio de sesion o de registro con sus respectivas validaciones.
+ */
+
 const Authentication = () => {
 
     const { setUsuario } = useContext(Users);
@@ -121,7 +125,7 @@ const Authentication = () => {
                     <span className="invalid-form">{sesionFormik.errors.password}</span>}
 
                     {errorLoguin && <span className="invalid-form">Contraseña o Correo electronico no válido.</span>}
-                    <button type="submit" className="btn btn-primary">Iniciar sesion</button>
+                    <button type="submit" className="btn btn-primary boton-sesion">Iniciar sesion</button>
                 </form> 
                 :
                 <form onSubmit={formik.handleSubmit}>

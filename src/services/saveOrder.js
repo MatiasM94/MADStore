@@ -1,5 +1,5 @@
 import { addDoc, collection, doc, getDoc, updateDoc } from "firebase/firestore";
-import { ToastError, ToastifySucces } from "../components/Toastify/toastify";
+import { ToastError } from "../components/Toastify/toastify";
 import { db } from "../firebase/config";
 import generateOrderObjet from "./generateOrderObjet";
 

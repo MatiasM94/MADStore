@@ -5,7 +5,7 @@ import CartWidget from "../CartWidget/cartwidget";
 import "./styles.css";
 import { useContext } from "react";
 import { Users } from "../../contexts/Users";
-import logoMad from "../../image/logo_mad_rgb.png"
+import logoMad from "../../image/logo_mad.png"
 import { ToastError } from "../Toastify/toastify";
 
 const NavBar = () => {

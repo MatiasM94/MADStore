@@ -12,6 +12,15 @@
 
 .stock {
     width: 9.5rem;
-    margin-left: 1rem;
+    margin-top: 10px;
     background-color: rgb(41, 185, 41);
+}
+
+@media screen and (max-width: 768px) {
+    .botones{ 
+        justify-content: center;
+    }
+    .control {
+        flex-direction: column;
+    }
 }

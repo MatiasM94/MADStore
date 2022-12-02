@@ -18,3 +18,15 @@ form {
 .invalid-form{
     color: red;
 }
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        height: fit-content;
+    }
+    .modalForm {
+        margin-top: 1rem;
+    }
+    .title-form {
+        margin: 10px 10px;
+    }
+}

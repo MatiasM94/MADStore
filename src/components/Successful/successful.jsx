@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import { Users } from "../../contexts/Users"
 import "./styles.css"
 
+/**
+ * 
+ * @returns Devuelve la pantalla final de compra con los datos del usuario
+ */
+
 const Successful = () => {
 
     const {usuario} = useContext(Users)

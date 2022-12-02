@@ -27,3 +27,15 @@
 .boton-eliminar {
     margin: 0 1rem 1rem 0;
 }
+
+@media screen and (max-width: 768px) {
+    .cart-detail {
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        margin: 0 10px;
+    }
+    .cart-text {
+        text-align: center;
+    }
+}

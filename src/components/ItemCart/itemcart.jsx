@@ -3,6 +3,11 @@ import { Shop } from "../../contexts/Shop";
 import Cart from "../Cart/cart";
 import "./styles.css"
 
+/**
+ * @property {Array} productos recibe a travez del context Shop, los productos que se deben agregar al carrito
+ * @returns Envia los productos que se agregan al cart para que sean renderizados por el componente Cart
+ */
+
 const ItemCart = () => {
     const {productos, clearCart, calculateTotal, setEstado} = useContext(Shop);
 

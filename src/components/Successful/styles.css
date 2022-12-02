@@ -5,3 +5,10 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    .successful {
+        margin: 0 10px;
+        text-align: center;
+    }
+}

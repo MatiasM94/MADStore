@@ -29,3 +29,14 @@
 .buy {
     margin-right: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .boton-total {
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 1rem 0
+    }
+    .total{
+        padding-right: 10px;
+    }
+}
